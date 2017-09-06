@@ -1,0 +1,93 @@
+@prefix : <http://datafabric.cc/register-of-disqualified-entities#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+:LegalEntity a owl:Class .
+
+:G1 a owl:DatatypeProperty ;
+	rdfs:label "The number of the record from the register of disqualified persons"@en , "Номер записи из реестра дисквалифицированных лиц"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G2 a owl:DatatypeProperty ;
+	rdfs:label "Full name"@en , "Фамилия Имя Отчетство"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G3 a owl:DatatypeProperty ;
+	rdfs:label "Date of birth of the person"@en , "Дата рождения физического лица"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G4 a owl:DatatypeProperty ;
+	rdfs:label "Place of birth"@en , "Место рождения физического лица"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G5 a owl:DatatypeProperty ;
+	rdfs:label "Name of the organization where the person worked during the time of the offence"@en , "Наименование организации, где физическое лицо работало во время совершения правонарушения"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G6 a owl:DatatypeProperty ;
+	rdfs:label "Identification number of the organization"@en , "Идентификационный номер налогоплательщика - юридического лица"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G7 a owl:DatatypeProperty ;
+	rdfs:label "The post in which the person worked during the time of the offence"@en , "Должность, в которой физическое лицо работало во время совершения правонарушения"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G8 a owl:DatatypeProperty ;
+	rdfs:label "Article of the administrative code, providing for administrative responsibility for committing an administrative offense"@en , "Cтатья Кодекса Российской Федерации об административных правонарушениях, предусматривающая административную ответственность за совершение административного правонарушения"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G9 a owl:DatatypeProperty ;
+	rdfs:label "Name of the organization who made the Protocol on an administrative offence"@en , "Наименование организации, составившего протокол об административном правонарушении"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G10 a owl:DatatypeProperty ;
+	rdfs:label "Full name of the judge who made the decision on disqualification"@en , "Фамилия Имя Отчетство судьи, вынесшего постановление о дисквалификации"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G11 a owl:DatatypeProperty ;
+	rdfs:label "The position of the judge"@en , "Должность судьи, вынесшего постановление о дисквалификации"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G12 a owl:DatatypeProperty ;
+	rdfs:label "The period of Ineligibility "@en , "Cрок дисквалификации (с учетом сведений о пересмотре)"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G13 a owl:DatatypeProperty ;
+	rdfs:label "Start date"@en , "Дата начала (с учетом сведений о пересмотре)"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
+
+:G14 a owl:DatatypeProperty ;
+	rdfs:label "Date of expiry of the period of Ineligibility"@en , "Дата истечения срока дисквалификации (с учетом сведений о пересмотре)"@ru ;
+	rdfs:domain :LegalEntity ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf owl:topDataProperty .
